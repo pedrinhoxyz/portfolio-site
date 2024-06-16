@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="magiclogo" href="magiclogo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="logo"><a href="#"><img src="profile.png" alt="Logo" class="logo-img"></a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <div class="select-menu">
+                <div class="select">
+                    <span>Select Language</span>
+                    <i class="fas fa-angle-down"></i>
+                </div>
+                <div class="options-list">
+                    <div class="option"><a href="index.html"><img src="united-kingdom1.png" alt="united-kingdom"> English</a></div>
+                    <div class="option"><a href="indexpl.html"><img src="poland.png" alt="Polish Flag"> Polish</a></div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button id="mode-toggle" class="mode-toggle">
+                    <i id="mode-icon" class="fas fa-moon"></i>
+                </button>
+                </div>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="about" class="section">
+        <div class="content about-content">
+            <div class="text">
+                <h1 class="animate__animated animate__fadeInDown"><img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=200&height=70&duration=4000&color=6200ea&lines=Hi+There!+👋;+I'm+Pedrinho!" />
+                </h1>
+                <p class="animate__animated animate__fadeInLeft">
+                    My name's pedrinho. I've been coding in Java since 2019, and this year, I decided to dive into learning Kotlin. I'm quite passionate about creating Discord bots and Android Apps. Being a developer, I'm always looking to expand my knowledge and skills to stay up-to-date with the latest trends and technologies in the programming world</p>
+                <div class="buttons animate__animated animate__fadeInUp">
+                    <a href="https://github.com/pedrinhoxyz" target="_blank" class="button"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://discord.com/users/891697282506956830" target="_blank" class="button"><i class="fab fa-discord"></i> Discord</a>
+                </div>
+            </div>
+            <img src="profile.png" alt="SRC" class="profile-img animate__animated animate__fadeInRight">
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="content">
+            <h2 class="animate__animated animate__fadeInDown">Skills</h2>
+            <ul class="skills-list">
+                <li class="animate__animated animate__fadeInUp"><i class="fab fa-java"></i> Java</li>
+                <li class="animate__animated animate__fadeInUp"><i class="fab fa-js"></i> Java Script</li>
+                <li class="animate__animated animate__fadeInUp"><i class="fas fa-database"></i> Mongodb</li>
+                <li class="animate__animated animate__fadeInUp"><i class="fab fa-html5"></i> Html</li>
+                <li class="animate__animated animate__fadeInUp"><i class="fab fa-css3"></i> Css</li>
+                <li class="animate__animated animate__fadeInUp">
+                    <img src="kotlin.png" alt="Kotlin Icon" style="width: 1em; height: 1em; vertical-align: middle;">
+                    Kotlin
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="content">
+            <h2 class="animate__animated animate__fadeInDown">Projects</h2>
+            <div class="projects">
+                <div class="project animate__animated animate__fadeInLeft">
+                    <h3>Project 1</h3>
+                    <img src="project3.png" alt="Project 1">
+                    <button onclick="showModal('modal1')">See more</button>
+                </div>
+                <div class="project animate__animated animate__fadeInRight">
+                    <h3>Project 2</h3>
+                    <img src="project3.png" alt="Project 2">
+                    <button onclick="showModal('modal2')">See more</button>
+                </div>
+                <div class="project animate__animated animate__fadeInLeft">
+                    <h3>Project 3</h3>
+                    <img src="project3.png" alt="Project 3">
+                    <button onclick="showModal('modal3')">See more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer>
+    <p>Made with ❤ by <a href="https://dc.MagicStudios.pl/" target="_blank">MagicStudios.pl</a></p>
+    <a href="https://dc.MagicStudios.pl" target="_blank"><img src="magiclogo.png" alt="Logo" class="footer-logo"></a>
+</footer>
+
+<div id="modal1" class="modal">
+    <div class="modal-content animate__animated animate__fadeIn">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <h2>Project 1</h2>
+        <p>Detailed description of the project 1.</p>
+    </div>
+</div>
+
+<div id="modal2" class="modal">
+    <div class="modal-content animate__animated animate__fadeIn">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <h2>Project 2</h2>
+        <p>Detailed description of the project 2.</p>
+    </div>
+</div>
+<div id="modal3" class="modal">
+    <div class="modal-content animate__animated animate__fadeIn">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <h2>Project 3</h2>
+        <p>Detailed description of the project 3.</p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
